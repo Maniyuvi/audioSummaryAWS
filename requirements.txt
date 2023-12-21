@@ -1,2 +1,3 @@
 pyramid==2.0
-whisper
+torch==2.1.1
+transformers== 4.35.2
