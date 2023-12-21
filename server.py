@@ -26,7 +26,7 @@ if __name__ == '__main__':
         print('Runing')
         config.add_route('hello', '/')
         config.add_view(hello_world, route_name='hello')
-        config.add_route('audio_summary', '/as')
+        config.add_route('audio_summary', 'audiosummary')
         config.add_view(audio_summary_fun, route_name='audio_summary')
         app = config.make_wsgi_app()
     server = make_server('0.0.0.0', port, app)
