@@ -3,9 +3,7 @@ runtime: python3.11.0
 build:
   commands:
     build:
-      build:        
-      - pip install pipenv
-      - pipenv install
-      - pip install -r requirements.txt
+      build:
+      - pip install --no-cache-dir -r requirements.txt
 run:
   command: python server.py
