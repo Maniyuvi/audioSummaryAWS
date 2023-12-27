@@ -3,7 +3,7 @@ from flask import Flask, request
 # Create a Flask server instance
 server = Flask(__name__)
 
-port = 8080
+port = 3000
 
 # #step1 -Create a Router
 @server.route('/init', methods=['GET'])
