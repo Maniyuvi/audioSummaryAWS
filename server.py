@@ -6,6 +6,12 @@ server = Flask(__name__)
 port = 8080
 
 # #step1 -Create a Router
+@server.route('/', methods=['GET'])
+def audioSummary():
+    print(' :::')
+    return {"Start" : "First"}
+
+
 @server.route('/init', methods=['GET'])
 def initLoad():
     print('initLoad :::')
